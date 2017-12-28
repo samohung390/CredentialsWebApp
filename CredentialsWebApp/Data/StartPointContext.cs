@@ -1,4 +1,5 @@
 ﻿using CredentialsWebApp.Models;
+using CredentialsWebApp.Models.StartPoint;
 //using CredentialsWebApp.Models.StartPoint;
 
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ namespace CredentialsWebApp.Data
 
         public DbSet<CredAdmin> CredAdmins { get; set; }
         public DbSet<Credential> Credentials { get; set; }
+        public DbSet<CredAdminLink> CredAdminLinks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
